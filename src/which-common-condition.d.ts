@@ -1,4 +1,4 @@
-import type { CommonCondition } from "./types";
+import type { CommonCondition, WhichCommonCondition } from "./types";
 
 /**
  * Returns the name of the most specific common custom Node.js import condition

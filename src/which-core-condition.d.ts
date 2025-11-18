@@ -1,4 +1,4 @@
-import type { CoreCondition } from "./types";
+import type { CoreCondition, WhichCoreCondition } from "./types";
 
 /**
  * Returns the name of the most specific native Node.js import condition that

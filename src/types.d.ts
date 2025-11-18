@@ -85,7 +85,7 @@ export type WhichCommonCondition = () => CommonCondition | "none";
  * `node`, `bun`, `react-server`, or even `edge-light` if using the
  * [Edge Runtime](https://vercel.com/docs/functions/runtimes/edge).
  */
-export type WhichJSRuntime = () => JSRuntime | "none";
+export type WhichRuntime = () => JSRuntime | "none";
 
 /**
  * Returns the name of the most specific Webpack target environment that was

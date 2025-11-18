@@ -1,4 +1,4 @@
-import type { JSRuntime, WhichJSRuntime } from "./types";
+import type { JSRuntime, WhichRuntime } from "./types";
 
 /**
  * Returns the name of the most specific runtime import condition that applies
@@ -8,4 +8,4 @@ import type { JSRuntime, WhichJSRuntime } from "./types";
  * `node`, `bun`, `react-server`, or even `edge-light` if using the
  * [Edge Runtime](https://vercel.com/docs/functions/runtimes/edge).
  */
-export function whichJSRuntime(): JSRuntime;
+export function whichRuntime(): JSRuntime;

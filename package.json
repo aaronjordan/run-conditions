@@ -1,6 +1,6 @@
 {
   "name": "run-conditions",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A utility library for detecting JavaScript runtime environments and export conditions",
   "author": "Aaron Jordan",
   "license": "MIT",
