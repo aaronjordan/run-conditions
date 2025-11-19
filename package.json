@@ -1,6 +1,6 @@
 {
 	"name": "detect-conditions",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "A utility library for detecting JavaScript runtime environments and export conditions",
 	"author": "Aaron Jordan",
 	"license": "MIT",
