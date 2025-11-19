@@ -3,12 +3,12 @@
  * https://nodejs.org/api/packages.html#conditional-exports
  */
 type CoreCondition =
-  | "import"
-  | "require"
-  | "node"
-  | "module-sync"
-  | "node-addons"
-  | "default";
+	| "import"
+	| "require"
+	| "node"
+	| "module-sync"
+	| "node-addons"
+	| "default";
 
 /**
  * Community conditions listed by Node.js
@@ -17,35 +17,35 @@ type CoreCondition =
  * (We can't actually check for `types` as we need that for TS)
  */
 type CommonCondition =
-  | "types"
-  | "browser"
-  | "development"
-  | "production"
-  | "default"
-  | "module";
+	| "types"
+	| "browser"
+	| "development"
+	| "production"
+	| "default"
+	| "module";
 
 /**
  * A collection of conditions used by JS runtimes registered at
  * https://runtime-keys.proposal.wintercg.org/
  */
 type JSRuntime =
-  | "edge-routine"
-  | "arvancloud"
-  | "azion"
-  | "workerd"
-  | "deno"
-  | "lagon"
-  | "react-native"
-  | "moddable"
-  | "netlify"
-  | "electron"
-  | "node"
-  | "bun"
-  | "react-server"
-  | "edge-light"
-  | "fastly"
-  | "kiesel"
-  | "wasmer";
+	| "edge-routine"
+	| "arvancloud"
+	| "azion"
+	| "workerd"
+	| "deno"
+	| "lagon"
+	| "react-native"
+	| "moddable"
+	| "netlify"
+	| "electron"
+	| "node"
+	| "bun"
+	| "react-server"
+	| "edge-light"
+	| "fastly"
+	| "kiesel"
+	| "wasmer";
 
 /**
  * Conditions set by Webpack depending on the compilation's target environment.
@@ -53,13 +53,13 @@ type JSRuntime =
  * https://webpack.js.org/guides/package-exports/#target-environment
  */
 type WebpackTargetEnvironment =
-  | "browser"
-  | "electron"
-  | "worker"
-  | "worklet"
-  | "node"
-  | "deno"
-  | "react-native";
+	| "browser"
+	| "electron"
+	| "worker"
+	| "worklet"
+	| "node"
+	| "deno"
+	| "react-native";
 
 /**
  * Returns the name of the most specific native Node.js import condition that
@@ -94,8 +94,8 @@ export type WhichRuntime = () => JSRuntime | "none";
  * https://webpack.js.org/guides/package-exports/#target-environment
  */
 export type WhichWebpackTargetEnvironment = () =>
-  | WebpackTargetEnvironment
-  | "none";
+	| WebpackTargetEnvironment
+	| "none";
 
 /**
  * Narrower function type used to simplify handling of "none" entries.

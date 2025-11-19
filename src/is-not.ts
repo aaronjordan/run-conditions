@@ -2,7 +2,7 @@
  * @file A generic is file to use when no conditions in a set match.
  */
 
-import type { CanReach, AnyNoneCondition } from "./types";
+import type { AnyNoneCondition, CanReach } from "./types";
 
 /**
  * When this is encountered, no conditions from the import list matched the

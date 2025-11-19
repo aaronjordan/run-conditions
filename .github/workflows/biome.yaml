@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  quality:
+  biome_check:
     runs-on: ubuntu-latest
     permissions:
       contents: read
