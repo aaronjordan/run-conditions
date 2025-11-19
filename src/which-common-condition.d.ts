@@ -6,4 +6,4 @@ import type { CommonCondition, WhichCommonCondition } from "./types";
  *
  * https://nodejs.org/api/packages.html#community-conditions-definitions
  */
-export function whichCommonCondition(): CommonCondition;
+export function whichCondition(): CommonCondition;

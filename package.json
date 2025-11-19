@@ -1,6 +1,6 @@
 {
-  "name": "run-conditions",
-  "version": "0.0.2",
+  "name": "detect-conditions",
+  "version": "0.1.0",
   "description": "A utility library for detecting JavaScript runtime environments and export conditions",
   "author": "Aaron Jordan",
   "license": "MIT",
@@ -24,6 +24,21 @@
     "dist"
   ],
   "exports": {
+    ".": {
+      "types": "./dist/detect.d.ts",
+      "import": "./dist/detect.mjs",
+      "default": "./dist/detect.mjs"
+    },
+    "./all": {
+      "types": "./dist/detect-all.d.ts",
+      "import": "./dist/detect-all.mjs",
+      "default": "./dist/detect-all.mjs"
+    },
+    "./assert": {
+      "types": "./dist/assert.d.ts",
+      "import": "./dist/assert.mjs",
+      "default": "./dist/assert.mjs"
+    },
     "./which/core": {
       "types": "./dist/which-core-condition.d.ts",
       "module-sync": "./dist/core/is-module-sync.mjs",
@@ -211,15 +226,10 @@
     "./can-reach/default": {
       "types": "./dist/can-reach.d.ts",
       "default": "./dist/is.mjs"
-    },
-    "./get-all": {
-      "types": "./dist/get-all.d.ts",
-      "import": "./dist/get-all.mjs",
-      "default": "./dist/get-all.mjs"
     }
   },
   "dependencies": {
-    "run-conditions": "*"
+    "detect-conditions": "*"
   },
   "devDependencies": {
     "@types/bun": "latest",

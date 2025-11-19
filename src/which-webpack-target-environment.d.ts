@@ -1,4 +1,7 @@
-import type { WebpackTargetEnvironment, WhichWebpackTargetEnvironment } from "./types";
+import type {
+  WebpackTargetEnvironment,
+  WhichWebpackTargetEnvironment,
+} from "./types";
 
 /**
  * Returns the name of the most specific Webpack target environment that was
@@ -6,4 +9,4 @@ import type { WebpackTargetEnvironment, WhichWebpackTargetEnvironment } from "./
  *
  * https://webpack.js.org/guides/package-exports/#target-environment
  */
-export function whichWebpackTargetEnvironment(): WebpackTargetEnvironment;
+export function whichCondition(): WebpackTargetEnvironment;

@@ -8,4 +8,4 @@ import type { JSRuntime, WhichRuntime } from "./types";
  * `node`, `bun`, `react-server`, or even `edge-light` if using the
  * [Edge Runtime](https://vercel.com/docs/functions/runtimes/edge).
  */
-export function whichRuntime(): JSRuntime;
+export function whichCondition(): JSRuntime;

@@ -6,4 +6,4 @@ import type { CoreCondition, WhichCoreCondition } from "./types";
  *
  * https://nodejs.org/api/packages.html#conditional-exports
  */
-export function whichCoreCondition(): CoreCondition;
+export function whichCondition(): CoreCondition;
