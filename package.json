@@ -1,6 +1,6 @@
 {
 	"name": "detect-conditions",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A utility library for detecting JavaScript runtime environments and export conditions",
 	"author": "Aaron Jordan",
 	"license": "MIT",
@@ -35,11 +35,6 @@
 			"types": "./dist/detect.d.ts",
 			"import": "./dist/detect.mjs",
 			"default": "./dist/detect.mjs"
-		},
-		"./all": {
-			"types": "./dist/detect-all.d.ts",
-			"import": "./dist/detect-all.mjs",
-			"default": "./dist/detect-all.mjs"
 		},
 		"./assert": {
 			"types": "./dist/assert.d.ts",

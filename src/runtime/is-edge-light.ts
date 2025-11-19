@@ -1,5 +1,5 @@
-import type { WhichJSRuntime } from "../types";
+import type { WhichRuntime } from "../types";
 
 const c = "edge-light" as const;
 
-export const whichCondition: WhichJSRuntime = () => c;
+export const whichCondition: WhichRuntime = () => c;

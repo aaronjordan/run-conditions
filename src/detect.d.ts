@@ -6,11 +6,11 @@ import type {
 } from "./types";
 
 /**
- * Returns the most specific condition detected in each category.
+ * Returns all matching conditions detected in each category.
  */
 export declare function detect(): {
-	core: CoreCondition | "none";
-	common: CommonCondition | "none";
-	runtime: JSRuntime | "none";
-	webpack: WebpackTargetEnvironment | "none";
+	core: CoreCondition[];
+	common: CommonCondition[];
+	runtime: JSRuntime[];
+	webpack: WebpackTargetEnvironment[];
 };
